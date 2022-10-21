@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "categories";
+    src: url(../fonts/rus/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: text_catalog;
+    src: url(../fonts/rus/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Regular.ttf);
+}
+
+
+body{
+    margin: 0;
+}
+
+.catalog_grid{
+    display: grid;
+    height: 125px;
+    grid-template-areas: 
+    "text sort basket"
+    "categories search search"
+    ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.text{
+    grid-area: text;
+    padding: 8px 0 0 20px;
+    font-size: 22px;
+    font-family: text_catalog, monospace;
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.sort{
+    grid-area: sort;
+    padding: 13px 0 0 20px;
+    font-size: 17px;
+    font-family: text_catalog, monospace;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.basket{
+    grid-area: basket;
+    text-align: center;
+    padding-top: 10px;
+    background-image: url(../images/icons8-корзина-2-16.png);
+    background-repeat: no-repeat;
+    background-position: 155px;
+    font-family: text_catalog, monospace;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.categories{
+    font-size: 25px;
+    font-weight: 600;
+    font-family: text_catalog, monospace;
+    letter-spacing: 1px;
+    
+}
+
+    .categories h3{
+        margin: 23px 0 24px 20px; 
+    }
+
+.search{
+    grid-area: search;
+    padding: 10px 0 0 20px;
+}
+
+    input[type="text"]{
+        width: 70vw;
+        height: 40px;
+        font-family: text_catalog, monocpace;
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 18px;
+        padding-left: 10px;
+    }
+
+    input[type="submit"]{
+        width: 60px;
+        height: 45px;
+        background-image: url(../images/icons8-поиск-32.png);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position: 15px;
+        vertical-align:top;
+        border: 1px solid black;
+        border-radius: 5px;
+}
+
+.categories_block{
+    border: 1px solid black;
+    width: 18vw;
+    float: left;
+}
+
+    .categories_line{
+        width: auto;
+        height: 35px;
+        padding: 10px 0 0 20px;
+        border: 1px solid black;
+        font-family: text_catalog, monospace;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+.product_list{
+    border: 1px solid black;  
+    display: inline-block;
+    width: 65vw;
+}
+
+    .product_block{
+        border: 1px solid black;
+        width: 200px;
+        height: 250px;
+        margin: 3%;
+        float: left;
+    }
+
+.reklama{
+    width: 13vw;
+    height: 300px;
+    border: 1px solid black;
+    float: right;
+}
+
+/* .footer{
+    border: 1px solid black;
+    height: 100px;
+    width: 100vw;
+    position: relative;
+} */

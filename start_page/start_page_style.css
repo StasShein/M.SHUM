@@ -1,0 +1,329 @@
+@font-face {
+    font-family: "text_logo";
+    src: url("fonts/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "text_about";
+    src: url("fonts/Poiret_One/PoiretOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "text_entry";
+    src: url("fonts/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Regular.ttf");
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: #C5DDE8;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(100, 100, 100);
+    border-radius: 50px;
+}
+
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    scrollbar-width: 100px; 
+}
+
+a{
+    color: black;
+}
+
+a:active{
+    color: red;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+}
+
+
+    .name_page{
+        flex: 1;
+        font-size: 45px;
+        font-weight: 600;
+        font-family: text_logo, monospace;
+        padding-left: 1%;
+        color: rgba(0, 0, 0, 0.726);
+        cursor: pointer;
+    }
+
+    .empty_flex{
+        flex: 2;
+    }
+
+    .function{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+    }
+
+        .function_buttom{
+            border: inherit;
+            background-color: inherit;
+            height: 36px;
+            border-radius: 50%;
+            padding-top: 6%;
+            cursor: pointer;
+        }
+
+        .function_buttom:hover{
+            background-color: silver;
+        }
+
+        #login{
+            flex: 1;
+            text-align: center;
+            padding-top: 5%;
+        }
+        
+        #search{
+            flex: 1;
+            text-align: center;
+            padding-top: 5%;
+        }
+
+        #wish_list{
+            flex: 1;
+            text-align: center;
+            padding-top: 5%;
+        }
+
+        #basket{
+            flex: 1;
+            text-align: center;
+            padding-top: 5%;
+        }
+
+        #catalog{
+            flex: 1;
+            text-align: center;
+            padding-top: 5%;
+        }
+
+.body{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    width: 100vw;
+    height: 100vh;
+    border-bottom: 1px solid black;
+    overflow-y: hidden;
+}   
+
+    .main_img{
+        width: 670px;
+        height: 760px;
+    }
+
+    .main{
+        display: grid;
+        grid-template-rows: 1fr 2fr 2fr;
+        margin-top: 70px; 
+    }
+
+        .info{
+            font-family: text_about, monospace;
+            font-size: 19px;
+            text-align: center;
+            padding-top: 10%;
+            font-weight: 600;
+        }
+        
+
+        .logo{
+            font-size: 70px;
+            font-weight: 500;
+            font-family: text_logo, monospace;
+            text-align: center;
+            padding-top:5%;
+            color: black;
+        }
+
+        .shop{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr; 
+        }
+
+            .button_shop{
+                text-align: center;
+                padding-top: 5%;
+                font-size: 20px;
+                font-family: text_logo, monospace;
+                color: rgba(163, 162, 162, 0.863);
+            }
+
+.catalog_menu{
+    width: 100vw;
+    border: 1px solid black;
+    font-family: text_about, monospace;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+    .catalog_flex{
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+        .menu_block{
+            flex: 1;
+            border: 1px solid black;
+            height: 100px;
+            margin-bottom: 30px;
+            padding: 50px 0 0 0 ;
+        }
+
+    
+
+.offers{
+    width: 100vw;
+    font-family: text_about, monospace;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+}
+
+    #offers_list{
+        display: flex;
+        flex-direction: row;
+        
+
+    }
+
+        .product_offers{
+            flex: 1;
+            margin: 0 30px 0 30px;
+            border: 1px solid black;
+            padding: 0;
+        }
+
+        .offer_img{
+            width: 120px;
+            height: 120px;
+            margin-top: 20px;
+        }
+
+        .p_name{
+            font-size: 17px;
+            font-family: text_about, monospace;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .p_price{
+            font-size: 20px;
+            font-family: text_entry, monospace;
+            font-weight: 600;
+            margin-top: 0;
+            color: red;
+            font-size: 25px;
+
+        }
+
+    .time_offers{
+        margin: 30px 0 30px 0;
+        font-size: 20px;
+    }
+
+
+
+.about{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+    .about_block{
+        flex: 1;
+        width: 32vw;
+        font-family: text_entry, monospace;
+        font-size: 18px;
+        padding: 2% 7% 2% 7%;
+        letter-spacing: 1px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+.news{
+    font-family: text_about, monospace;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+}
+
+
+    .news_flex{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+        .news_block{
+            flex: 1;
+            margin: 40px;
+            font-family: text_entry, monospace;
+            letter-spacing: 1px;
+            font-size: 18px;
+            font-weight: 600;
+            padding-left: 10px;
+            text-align: justify;
+        }
+
+        .news_block img{
+            width: 200px;
+            height: 200px;
+            margin: 10px 30px 20px 40px;
+        }
+
+        .news_block h3{
+            text-align: center;
+        }
+
+.footer{
+    width: 100vw;
+    height: 200px;
+    border-top: 1px solid black;
+    font-family: text_about, monospace;
+    font-size: 15px;
+    color: #505050;
+}
+
+    .footer_block{
+        margin-left: 10px;
+        width: 45vw;
+        float: left;
+        text-align: center;
+    }
+
+#button_up{
+    border: 1px solid silver;
+    border-radius: 100px;
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    background-image: url(imgs/icons8-up-32.png);
+    background-repeat: no-repeat;
+    background-position: 24px;
+    cursor: pointer;
+    position:sticky;
+    left: 92vw;
+    top: 650px;
+}
+
+   

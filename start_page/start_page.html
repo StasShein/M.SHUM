@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="start_page_style.css" type="text/css">
+
+    <link rel="stylesheet" href="registration/registration_style.css" type="text/css">
+
+    <link rel="stylesheet" href="../catalog/catalog.css">
+
+    <title>M.SHUM</title>
+
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="name_page" onclick="up()"> M.SHUM </div>
+
+        <div class="empty_flex"></div>
+
+        <div class="function">
+
+            <div id="login" onclick="registration()"> 
+                <button class="function_buttom">
+
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 24 24" 
+                    width="20" 
+                    height="20">
+                    <g id="_01_align_center" 
+                    data-name="01 align center">
+                    <path 
+                    d="M21,24H19V18.957A2.96,2.96,0,0,0,16.043,16H7.957A2.96,2.96,0,0,0,5,18.957V24H3V18.957A4.963,4.963,0,0,1,7.957,14h8.086A4.963,4.963,0,0,1,21,18.957Z"/>
+                    <path 
+                    d="M12,12a6,6,0,1,1,6-6A6.006,6.006,0,0,1,12,12ZM12,2a4,4,0,1,0,4,4A4,4,0,0,0,12,2Z"/>
+                    </g>
+                </svg>
+
+                <div id="block">
+
+                    <div class="log_reg">
+                        
+                        <div class="login">
+                            <p>Вход</p>
+                        </div>
+            
+                        <div class="registr">
+                            <p>Регистрация</p>
+                        </div>
+            
+                    </div>
+            
+                    <div class="email">
+                        <p><input class="info_window" type="email" placeholder="E-mail"></p>
+                    </div>
+            
+                    <div class="pass">
+                        <p><input class="info_window" type="password" placeholder="Введите пароль"></p>
+                    </div>
+            
+                    <div class="remember">
+                        <input type="checkbox"> Запомнить меня
+                    </div>
+            
+                    <div class="enter">
+                        <input id="enter" type="submit" value="Вход"></input>
+                    </div>
+            
+                    <div class="forgot_pass">
+                        <p>Забыл пароль?</p>
+                    </div>
+            
+                </div>
+
+                </button>
+
+            </div>
+
+            <div id="search">
+                
+                <button class="function_buttom">
+
+                <svg 
+
+                    xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 24 24" 
+                    width="18" 
+                    height="18">
+                    <g id="_01_align_center" 
+                    data-name="01 align center">
+                    <path d="M24,22.586l-6.262-6.262a10.016,10.016,0,1,0-1.414,1.414L22.586,24ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"/>
+                    </g>
+
+                </svg>
+
+                </button>
+
+            </div>
+
+            <div id="wish_list">
+
+                <button class="function_buttom">
+
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    viewBox="0 0 24 24" 
+                    width="20" 
+                    height="20">
+                    <g id="_01_align_center" 
+                    data-name="01 align center">
+                    <path 
+                    d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917ZM12,20.846c-3.253-2.43-10-8.4-10-12.879a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,7.967h2a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,7.967C22,12.448,15.253,18.416,12,20.846Z"/>
+                    </g>
+                </svg>
+
+                </button>
+
+            </div>
+
+            <div id="basket"> 
+                    
+                <button class="function_buttom">
+
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    id="Outline" 
+                    viewBox="0 0 24 24" 
+                    width="20" 
+                    height="20">
+                    <path 
+                    d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"/>
+                    <circle 
+                    cx="7" 
+                    cy="22" 
+                    r="2"/>
+                    <circle 
+                    cx="17" 
+                    cy="22" 
+                    r="2"/>
+                </svg>
+        
+                </button>
+
+            </div>
+
+            <div id="catalog" onclick="catalog_main()"> 
+
+                <button class="function_buttom">
+
+                <svg
+
+                    xmlns="http://www.w3.org/2000/svg" 
+                    id="Outline" 
+                    viewBox="0 0 24 24" 
+                    width="20" 
+                    height="20">
+                    <path d="M1,6H23a1,1,0,0,0,0-2H1A1,1,0,0,0,1,6Z"/>
+                    <path d="M23,9H1a1,1,0,0,0,0,2H23a1,1,0,0,0,0-2Z"/>
+                    <path d="M23,19H1a1,1,0,0,0,0,2H23a1,1,0,0,0,0-2Z"/>
+                    <path d="M23,14H1a1,1,0,0,0,0,2H23a1,1,0,0,0,0-2Z"/>
+
+                </svg>
+
+                <div id="categories_block" style="display:none;">
+                
+                    <a href=""> <div class="categories_line">Головные уборы</div> </a>
+
+                    <a href=""> <div class="categories_line">Верхняя одежда</div> </a>
+
+                    <a href=""> <div class="categories_line">Кофты</div> </a>
+
+                    <a href=""> <div class="categories_line">Майки</div> </a>
+
+                    <a href=""> <div class="categories_line">Джинсы</div> </a>
+
+                    <a href=""> <div class="categories_line">Лосины</div> </a>
+
+                    <a href=""> <div class="categories_line">Платья</div> </a>
+
+                    <a href=""> <div class="categories_line">Обувь</div> </a>
+
+                    <a href=""> <div class="categories_line">Сумки</div> </a>
+
+                    <a href=""> <div class="categories_line">Ремни</div> </a>
+                            
+                </div>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="body">
+
+        <div class="main">
+
+            <div class="info">
+               <p >
+                Интернет - магазин Женской и Мужской одежды. 
+                <br> Здесь вы найдете все, что вам нужно!</p>
+
+            </div>
+
+            <div class="logo">
+                <p><a href="../catalog/catalog.html">BUY NOW</a></p> 
+            </div>
+
+            <div class="shop">
+
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="button_shop"><a href="../catalog/catalog.html">Каталог &#8594;</a>  </div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+
+
+            </div>
+            
+        </div>
+
+        <div class="product">
+            <img class="main_img" src="imgs/hoodie_1.png" alt="img">
+        </div>
+    </div>
+
+    <div id="button_up"  onclick="up()">
+
+        <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            id="Outline" 
+            viewBox="0 0 24 24" 
+            width="512" 
+            height="512">
+            <path 
+            d="M18,15.5a1,1,0,0,1-.71-.29l-4.58-4.59a1,1,0,0,0-1.42,0L6.71,15.21a1,1,0,0,1-1.42-1.42L9.88,9.21a3.06,3.06,0,0,1,4.24,0l4.59,4.58a1,1,0,0,1,0,1.42A1,1,0,0,1,18,15.5Z"/>
+        </svg>
+  
+    </div>
+
+    <div class="offers">
+
+        <h3>
+            <img src="imgs/icons8-огонь-32.png" alt="fire">
+            Акции дня
+            <img src="imgs/icons8-огонь-32.png" alt="fire">
+        </h3>
+
+        <div id="offers_list">
+
+        </div>
+        <div class="time_offers">
+            1 день 2 часа 15 минут 37 секунд
+        </div>
+
+    </div>
+
+    <div class="about">
+
+        <div class="about_block">
+
+            <img src="imgs/icons8-доставлено-100.png" alt="delivery">
+
+            <h3> Бесплатная доставка</h3>
+                
+            <p> Бесплатная доставка* по всей территории Республики Беларусь.
+                Другие способы доставки</p>
+        </div>
+
+        <div class="about_block">
+
+            <img src="imgs/icons8-оплатить-96.png" alt="pay">
+
+            <h3> Удобные способы оплаты</h3>
+                
+            <p> Вы можете оплатить покупки 
+                не только наличными, но и 
+                банковской картой. Предоплата 
+                не обязательна, вы всегда 
+                можете заказать понравившуюся 
+                вещь сейчас, а оплатить в 
+                момент доставки.</p>
+        </div>
+
+        <div class="about_block">
+
+            <img src="imgs/icons8-tank-top-96.png" alt="clothes">
+
+            <h3> Только подлинные товары известных 
+                брендов</h3>
+                
+            <p> M.SHUM гарантирует качество и 
+                подлинность каждой вещи, которую 
+                вы у нас купите. Если вещь вам 
+                не подойдет, у Вас есть 14 дней 
+                на возврат со 100% возмещением 
+                денег.</p>
+        </div>
+
+    </div>
+
+    <div class="news">
+
+        <p>Новости</p>
+
+        <div class="news_flex">
+
+            <div class="news_block">
+
+                <img src="imgs/418467049971.jpg" alt="black_friday">
+                
+                <h3>Черная Пятница</h3>
+
+                <p> В магазинах M.SHUM стартует период черных пятниц! Приходите к нам в магазины или заказывайте через
+                    Интернет-магазин и приобретайте вещи с Выгодой до 90%! 
+                    <ul>Даты проведения Черных Пятниц: 
+
+                        <li>25.11.22 - 27.11.22</li> 
+                        <li>09.12.22 - 11.12.22</li>
+                    </ul>
+                </p>
+
+            </div>
+
+            <div class="news_block">
+
+                <img src="imgs/qa129ysc79wp.jpg" alt="vacation">
+                
+                <h3>Вакансия Front-end</h3>
+
+                <ul>Требования:
+
+                    <li>Наличие опыта разработки JavaScript‚ HTML5‚ CSS3 от 2-х лет;</li>
+                    <li>Кроссбраузерная и адаптивная верстка</li>
+                    <li>DOM, BEM, SASS/LESS</li>
+                    <li>Наличие портфолио из сверстанных сайтов</li>
+
+                </ul> 
+
+            </div>
+
+        <div class="news_block">
+
+            <img src="imgs/M.SHUM.png" alt="Logo">
+
+            <h3>Открытие нового магазина M.SHUM</h3>
+
+            <p>Дорогие друзья, делимся с вами радостной новостью! Скоро открытие нового
+                магазина M.SHUM. 
+                <br>
+                Приходите к нам на октрытие 16.10.22 по улице Богданова 3, Торговый центр "Баленса" 
+            </p>
+            
+        </div>
+
+        <div class="news_block">
+
+            <img src="imgs/z3twpjpr444795.jpg" alt="Zara">
+            <h3>Прекращение поставки вещей Zara</h3>
+            
+            <p>К сожалению, из-за санкций прекращается поставка вещей Zara. Мы пытаемся решить
+                этот вопрос, т.к. мы знаем как вы любите Zara. А пока что мы вам предлагаем 
+                другие хорошие бренды, которые вы любите не меньше!
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        
+        <div class="footer_block">
+
+            <p>Наименование юридического лица — ООО "M.SHUM".</p>
+       
+            <p>Место нахождения юридического лица — Республика Беларусь, 220034, город Минск, 
+                <br>
+                ул. Первомайская, д. 15, пом. 1Н.</p>
+            
+            <p>Регистрационный номер, дата регистрации, регистрирующий орган — 192263358, 19.10.2010, 
+                <br> Главное управление юстиции Мингорисполкома.</p>
+            
+            <p> В торговом реестре с 14 мая 2015 года.</p>
+
+        </div>
+        
+        <div class="footer_block">
+
+            <p>Регистрация в торговом реестре №25345675, Администрацией Партизанского района г. Минска.</p>
+        
+            <p>График работы Интернет-магазина — круглосуточно.</p>
+
+            <p>Контакты M.SHUM – тел. +375 (25) 782-48-03, support@M.SHUM.by.</p>
+
+            <p>Контакты M.SHUM для рассмотрения обращений покупателей о нарушении их прав — тел. +375 (29) 156-73-11 (понедельник-пятница с 10:00 до 18:00), legal-by@M.SHUM.by.</p>
+        
+        </div>
+
+        
+        
+
+        
+    
+    </div>
+
+    <script src="../array/array.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
