@@ -3,7 +3,7 @@
     src: url(fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
 }
 
-#block{
+#block_reg{
     display: none;
     grid-row: 1fr;
     width: 400px;
@@ -46,11 +46,20 @@
     font-family: text,monospace;
     font-weight: 600;
     margin: 5%;
+    cursor: pointer;
 }
 
 .remember{
     font-size: 12px;
     font-family: text,monospace;
+}
+
+#remember_input{
+    opacity: 1;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    left: 0;
 }
 
 
@@ -71,7 +80,7 @@
 }
 
 input[type="email"]{
-    background-image: url(../images/icons8-envelope-16.png);
+    background-image: url(imgs/icons8-envelope-16.png);
     background-repeat: no-repeat;
     background-position: left;
     background-position-x: 10px;
@@ -79,7 +88,7 @@ input[type="email"]{
 }
 
 input[type="password"]{
-    background-image: url(../images/icons8-ключ-16.png);
+    background-image: url(imgs/icons8-ключ-16.png);
     background-repeat: no-repeat;
     background-position: left;
     background-position-x: 10px;

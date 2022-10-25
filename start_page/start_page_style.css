@@ -23,7 +23,6 @@
     border-radius: 50px;
 }
 
-
 body{
     margin: 0;
     overflow-x: hidden;
@@ -45,6 +44,8 @@ a:active{
     width: 100vw;
     height: 70px;
     position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 
@@ -58,9 +59,16 @@ a:active{
         cursor: pointer;
     }
 
-    .empty_flex{
+    #empty_flex{
         flex: 2;
     }
+
+        #search_input{
+            height: 40px;
+            width: 50vw;
+            margin-top: 10px;
+            float: left;
+        }
 
     .function{
         flex: 1;
@@ -189,53 +197,48 @@ a:active{
 
     
 
-.offers{
+.offers {
     width: 100vw;
     font-family: text_about, monospace;
     font-size: 25px;
-    text-align: center;
     font-weight: 600;
+}
+
+.offers h3{
+    text-align: center;
 }
 
     #offers_list{
         display: flex;
         flex-direction: row;
-        
-
     }
 
+        input[type ="checkbox"]{
+            position: absolute;
+            left: 10px;
+            opacity: 0;
+            z-index:1;
+            width: 30px;
+            height: 30px;
+        }
+
         .product_offers{
+            position: relative;
             flex: 1;
-            margin: 0 30px 0 30px;
-            border: 1px solid black;
-            padding: 0;
+            margin: 0 30px 0 15px;
+            background-color:aliceblue;
+            padding-left: 10px;
         }
 
         .offer_img{
-            width: 120px;
-            height: 120px;
-            margin-top: 20px;
-        }
-
-        .p_name{
-            font-size: 17px;
-            font-family: text_about, monospace;
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
-
-        .p_price{
-            font-size: 20px;
-            font-family: text_entry, monospace;
-            font-weight: 600;
-            margin-top: 0;
-            color: red;
-            font-size: 25px;
-
+            width: 160px;
+            height: 180px;
+            margin: 20px 0 0 35px;
         }
 
     .time_offers{
         margin: 30px 0 30px 0;
+        text-align: center;
         font-size: 20px;
     }
 
@@ -321,9 +324,10 @@ a:active{
     background-repeat: no-repeat;
     background-position: 24px;
     cursor: pointer;
-    position:sticky;
+    position: sticky;
     left: 92vw;
     top: 650px;
+    z-index:1;
 }
 
    

@@ -14,21 +14,26 @@
 
     <link rel="stylesheet" href="../catalog/catalog.css">
 
+    <link rel="import" href="registration/registration.html">
+
     <title>M.SHUM</title>
 
 </head>
 
+
 <body>
+
+    
 
     <div class="header">
 
         <div class="name_page" onclick="up()"> M.SHUM </div>
 
-        <div class="empty_flex"></div>
+        <div id="empty_flex"> </div>
 
         <div class="function">
 
-            <div id="login" onclick="registration()"> 
+            <div id="login" onclick="registrationOpen()"> 
                 <button class="function_buttom">
 
                 <svg 
@@ -45,47 +50,10 @@
                     </g>
                 </svg>
 
-                <div id="block">
-
-                    <div class="log_reg">
-                        
-                        <div class="login">
-                            <p>Вход</p>
-                        </div>
-            
-                        <div class="registr">
-                            <p>Регистрация</p>
-                        </div>
-            
-                    </div>
-            
-                    <div class="email">
-                        <p><input class="info_window" type="email" placeholder="E-mail"></p>
-                    </div>
-            
-                    <div class="pass">
-                        <p><input class="info_window" type="password" placeholder="Введите пароль"></p>
-                    </div>
-            
-                    <div class="remember">
-                        <input type="checkbox"> Запомнить меня
-                    </div>
-            
-                    <div class="enter">
-                        <input id="enter" type="submit" value="Вход"></input>
-                    </div>
-            
-                    <div class="forgot_pass">
-                        <p>Забыл пароль?</p>
-                    </div>
-            
-                </div>
-
-                </button>
-
+                
             </div>
 
-            <div id="search">
+            <div id="search" onclick="searchSP()">
                 
                 <button class="function_buttom">
 
@@ -170,37 +138,13 @@
 
                 </svg>
 
-                <div id="categories_block" style="display:none;">
-                
-                    <a href=""> <div class="categories_line">Головные уборы</div> </a>
-
-                    <a href=""> <div class="categories_line">Верхняя одежда</div> </a>
-
-                    <a href=""> <div class="categories_line">Кофты</div> </a>
-
-                    <a href=""> <div class="categories_line">Майки</div> </a>
-
-                    <a href=""> <div class="categories_line">Джинсы</div> </a>
-
-                    <a href=""> <div class="categories_line">Лосины</div> </a>
-
-                    <a href=""> <div class="categories_line">Платья</div> </a>
-
-                    <a href=""> <div class="categories_line">Обувь</div> </a>
-
-                    <a href=""> <div class="categories_line">Сумки</div> </a>
-
-                    <a href=""> <div class="categories_line">Ремни</div> </a>
-                            
-                </div>
-
-                </button>
-
             </div>
 
         </div>
 
     </div>
+
+    <div id="block_reg"></div> 
 
     <div class="body">
 
@@ -410,12 +354,9 @@
         
         </div>
 
-        
-        
-
-        
-    
     </div>
+
+
 
     <script src="../array/array.js"></script>
 

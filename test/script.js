@@ -1,16 +1,10 @@
-
-let info = [
-    {
-        price: 'I Love Masha'
-    },
-
-   
-]
-
-function addProduct (){
-    for(i = 0; i < 1000; i++){
-        document.getElementById('catalog').innerHTML += `<div style='width:150px; border:1px solid red; color:purple;'>${info[0].price}</div>`
+function fun1() {
+    let chbox= document.getElementById('check');
+    let img = document.getElementById('heart')
+        if (chbox.checked) {
+            img.outerHTML = '<img id = "heart" src="../test/icons8-сердце-32 (1).png" alt="">'
+        }
+        else {
+            img.outerHTML = '<img id = "heart" src="../test/icons8-сердце-32.png" alt="">'
+        }
     }
-}
-
-addProduct()
