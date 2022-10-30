@@ -2,11 +2,11 @@ function up(){
     window.scrollTo(0,0)
 }
 
-function addProduct (){
+function addProductOffer (){
     for(i = 0; i < 5; i++){
         document.getElementById('offers_list').innerHTML += 
         `<div class="product_offers"> 
-            <img class="offer_img" src=${offer[i].img}> 
+            <a href="../catalog/catalog.html"><img class="offer_img" src=${offer[i].img}></a> 
             <h3 style="font-weight:600; font-size:20px;">${offer[i].name}</p> 
             <p class="p_info">${offer[i].info}</p> 
             <p class="p_price">${offer[i].price}$</p> 
@@ -14,7 +14,7 @@ function addProduct (){
     }
 }
 
-addProduct()
+addProductOffer()
 
 function registrationOpen(){
     window.scrollTo(0,0)
@@ -22,7 +22,7 @@ function registrationOpen(){
     
     `<div class="log_reg">
             
-    <div class="login" onclick="registrationEnter()">
+    <div class="login">
         <p>Вход</p>
     </div>
 
@@ -52,10 +52,18 @@ function registrationOpen(){
         <p>Забыл пароль?</p>
     </div>`
 
-    document.getElementById('block_reg').style = 'display: grid; z-index:1'
-    document.querySelector('HTML').style.overflow = 'hidden'
-    
 
+    let regDisp = document.getElementById('block_reg').style.display
+
+    if(regDisp =='none'){
+
+        document.getElementById('block_reg').style.display='grid';
+
+    }else{
+
+        document.getElementById('block_reg').style.display='none';
+
+    }
 }
 
 function registrationClose(){
@@ -88,44 +96,36 @@ function registrationStart(){
     </div>`
 }
 
-function registrationEnter(){
-    document.getElementById('block_reg').innerHTML =  
-    `<div class="log_reg">
-            
-    <div class="login">
-        <p>Вход</p>
-    </div>
+function openSearchSP(){
 
-    <div class="registr" onclick="registrationStart()">
-        <p>Регистрация</p>
-    </div>
+    searchDisp = document.getElementById('search_input').style.display;
+ 
+    if(searchDisp =='none'){
 
-    </div>
+        document.getElementById('search_input').style.display='block';
 
-    <div class="email">
-        <p><input class="info_window" type="email" placeholder="E-mail"></p>
-    </div>
+    }else{
 
-    <div class="pass">
-        <p><input class="info_window" type="password" placeholder="Введите пароль"></p>
-    </div>
+        document.getElementById('search_input').style.display='none';
 
-    <div class="remember">
-        <input type="checkbox" id="remember_input"> Запомнить меня
-    </div>
-
-    <div class="enter">
-        <input id="enter" type="submit" value="Вход" onclick="registrationClose()"></input>
-    </div>
-
-    <div class="forgot_pass">
-        <p>Забыл пароль?</p>
-    </div>`
     }
+}
 
-function searchSP(){
-    let search = document.getElementById('empty_flex')
-    search.innerHTML = '<input type="text" id="search_input" placeholder="Поиск">'
+function openCategoriesSP(){
+    categoriesDisp = document.getElementById('categories_SP').style.display;
+ 
+    if(categoriesDisp=='none'){
+
+        document.getElementById('categories_SP').style.display='block';
+
+    }else{
+
+        document.getElementById('categories_SP').style.display='none';
+
+    }
 }
 
 
+
+
+    

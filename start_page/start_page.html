@@ -23,13 +23,15 @@
 
 <body>
 
-    
-
     <div class="header">
 
         <div class="name_page" onclick="up()"> M.SHUM </div>
 
-        <div id="empty_flex"> </div>
+        <div id="empty_flex"> 
+
+            <input type="text" id="search_input" placeholder="Поиск">
+
+        </div>
 
         <div class="function">
 
@@ -53,7 +55,7 @@
                 
             </div>
 
-            <div id="search" onclick="searchSP()">
+            <div id="search" onclick="openSearchSP()">
                 
                 <button class="function_buttom">
 
@@ -94,35 +96,9 @@
 
             </div>
 
-            <div id="basket"> 
-                    
-                <button class="function_buttom">
+            <div id="catalog"> 
 
-                <svg 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    id="Outline" 
-                    viewBox="0 0 24 24" 
-                    width="20" 
-                    height="20">
-                    <path 
-                    d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"/>
-                    <circle 
-                    cx="7" 
-                    cy="22" 
-                    r="2"/>
-                    <circle 
-                    cx="17" 
-                    cy="22" 
-                    r="2"/>
-                </svg>
-        
-                </button>
-
-            </div>
-
-            <div id="catalog" onclick="catalog_main()"> 
-
-                <button class="function_buttom">
+                <button class="function_buttom" onclick="openCategoriesSP()">
 
                 <svg
 
@@ -137,6 +113,16 @@
                     <path d="M23,14H1a1,1,0,0,0,0,2H23a1,1,0,0,0,0-2Z"/>
 
                 </svg>
+                
+                <div id="categories_SP">
+
+                    <a href="#pos1"><div class="categories_line">Акции дня</div></a>
+
+                    <a href="#pos2"><div class="categories_line">О нас</div></a>
+
+                    <a href="#pos3"><div class="categories_line">Новости</div></a>
+
+                </div>
 
             </div>
 
@@ -197,7 +183,7 @@
   
     </div>
 
-    <div class="offers">
+    <div class="offers" id="pos1">
 
         <h3>
             <img src="imgs/icons8-огонь-32.png" alt="fire">
@@ -208,13 +194,13 @@
         <div id="offers_list">
 
         </div>
-        <div class="time_offers">
-            1 день 2 часа 15 минут 37 секунд
+        <div id="time_offers">
+        
         </div>
 
     </div>
 
-    <div class="about">
+    <div class="about" id="pos2">
 
         <div class="about_block">
 
@@ -258,7 +244,7 @@
 
     </div>
 
-    <div class="news">
+    <div class="news" id="pos3">
 
         <p>Новости</p>
 

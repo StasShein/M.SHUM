@@ -1,16 +1,16 @@
 @font-face {
     font-family: "text_logo";
-    src: url("fonts/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf");
+    src: url(../common/fonts/Reem_Kufi_Fun/ReemKufiFun-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: "text_about";
-    src: url("fonts/Poiret_One/PoiretOne-Regular.ttf");
+    src: url(../common/fonts/Poiret_One/PoiretOne-Regular.ttf);
 }
 
 @font-face {
     font-family: "text_entry";
-    src: url("fonts/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Regular.ttf");
+    src: url(../common/fonts/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Regular.ttf);
 }
 
 ::-webkit-scrollbar{
@@ -61,13 +61,14 @@ a:active{
 
     #empty_flex{
         flex: 2;
-    }
+    }   
 
         #search_input{
             height: 40px;
-            width: 50vw;
+            width: 45vw;
             margin-top: 10px;
             float: left;
+            display: none;
         }
 
     .function{
@@ -119,6 +120,15 @@ a:active{
             padding-top: 5%;
         }
 
+            #categories_SP{
+                display: none;
+                position: absolute;
+                top: 50px;
+                right: 0;
+                width: 200px;
+                margin-right: 20px;
+            }
+
 .body{
     display: grid;
     grid-template-columns: 1.5fr 2fr;
@@ -129,8 +139,8 @@ a:active{
 }   
 
     .main_img{
-        width: 670px;
-        height: 760px;
+        width: 45vw;
+        height: 100vh;
     }
 
     .main{
@@ -233,10 +243,10 @@ a:active{
         .offer_img{
             width: 160px;
             height: 180px;
-            margin: 20px 0 0 35px;
+            margin: 15% 0 0 18%;
         }
 
-    .time_offers{
+    #time_offers{
         margin: 30px 0 30px 0;
         text-align: center;
         font-size: 20px;
@@ -248,6 +258,8 @@ a:active{
     width: 100vw;
     display: flex;
     flex-direction: row;
+    margin-bottom: 100px;
+    padding-top: 100px;
     
 }
 

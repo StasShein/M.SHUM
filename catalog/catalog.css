@@ -1,11 +1,11 @@
 @font-face {
     font-family: "categories";
-    src: url(fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
+    src: url(../common/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: text_catalog;
-    src: url(fonts/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Regular.ttf);
+    src: url(../common/fonts/Alumni_Sans_Pinstripe/AlumniSansPinstripe-Regular.ttf);
 }
 
 
@@ -15,7 +15,7 @@ body{
 }
 
 #main_catalog{
-    padding: 0 70px 0  70px;
+    padding: 0 0 0  70px;
 }
 
 a{
@@ -27,7 +27,8 @@ a{
     
     max-width: 1000px;
     position: relative;
-    margin: auto;
+    margin: 10% 0 0 13%;
+
 }
 
     .slides{
@@ -185,10 +186,14 @@ a{
         }
 
         .p_name, .p_info{
-            font-size: 17px;
+            font-size: 15px;
             font-family: text_catalog, monospace;
             font-weight: 600;
             margin-bottom: 5px;
+        }
+
+        .p_name{
+            font-size: 20px;
         }
 
         .p_price{
@@ -201,16 +206,15 @@ a{
 
         }
 
-.reklama{
-    width: 13vw;
-    height: 300px;
-    border: 1px solid black;
-    float: right;
-}
+#reklama{
 
-/* .footer{
-    border: 1px solid black;
-    height: 100px;
-    width: 100vw;
+    width: 200px;
+    height: 600px;
+    float: right;
     position: relative;
-} */
+    overflow: hidden;
+    background-image: url(imgs/1win.jpg);
+    background-size: contain;
+    margin-right: 50px;
+    cursor: pointer;
+}
