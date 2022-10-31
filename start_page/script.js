@@ -6,7 +6,7 @@ function addProductOffer (){
     for(i = 0; i < 5; i++){
         document.getElementById('offers_list').innerHTML += 
         `<div class="product_offers"> 
-            <a href="../catalog/catalog.html"><img class="offer_img" src=${offer[i].img}></a> 
+            <a href="../catalog/catalog.html"><img class="offer_img" src=${offer[i].img} alt="offer"></a> 
             <h3 style="font-weight:600; font-size:20px;">${offer[i].name}</p> 
             <p class="p_info">${offer[i].info}</p> 
             <p class="p_price">${offer[i].price}$</p> 

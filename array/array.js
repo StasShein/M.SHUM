@@ -376,14 +376,14 @@ let offer = [
 
     {
         name:'Пальто',
-        img:'../catalog/imgs/product/men/coat_PNG60.png',
+        img:'../catalog/imgs/product/UpClothes/coat_PNG9.png',
         info:'Сезон : Весна <br> Коллекция : Classic <br> Состав верха : 100% хлопок <br> Состав подкладки : 100% ПЭ <br> Страна производства : Республика Беларусь',
         price:60.99, 
     },
 
     {
         name:'Легинсы',
-        img:'../catalog/imgs/product/women/leggings_PNG59.png',
+        img:'../catalog/imgs/product/leggings/leggings_PNG58.png',
         info:' Сезон : Осень <br> Коллекция : Classic <br> Состав верха : 72% ПЭ, 22% вискоза, 6% эластан <br> Страна производства : Республика Беларусь',
         price:12.99, 
     },
