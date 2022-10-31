@@ -249,29 +249,6 @@ function buyCart(){
     document.getElementById('cart_block').style.display = 'none'
 }
 
-let shoot = document.getElementById('reklama_shoot')
-
-function reklama(){
-
-    shoot.addEventListener('mousedown',(e)=>{
-
-    let a = e.clientY - shoot.getBoundingClientRect().top
-    let b = e.clientX - shoot.getBoundingClientRect().left
-
-    if(e){
-    function mouseMove(e){
-        shoot.style.top = e.pageY - a +'px'
-        shoot.style.left = e.pageX - b +'px'
-    }
-
-    document.addEventListener('mousemove',mouseMove)
-    document.addEventListener('mouseup',()=>{
-        document.removeEventListener('mousemove',mouseMove)})}
-})
-}
-
-reklama()
-
 
 
 

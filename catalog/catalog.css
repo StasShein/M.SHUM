@@ -10,7 +10,6 @@
 
 
 body{  
-    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
     color: rgb(41, 12, 59); 
 }
 
@@ -208,13 +207,13 @@ a{
 
 #reklama{
 
-    width: 200px;
-    height: 600px;
+    width: 13vw;
+    height: 1300px;
     float: right;
     position: relative;
     overflow: hidden;
     background-image: url(imgs/1win.jpg);
     background-size: contain;
-    margin-right: 50px;
+    margin-right: 3%;
     cursor: pointer;
 }

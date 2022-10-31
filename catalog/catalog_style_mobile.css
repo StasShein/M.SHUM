@@ -1,0 +1,65 @@
+#main_catalog{
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(87deg, #EECFBA, #C5DDE8)
+}
+
+
+.header{
+    display: block;
+    position: relative;
+}
+
+.name_page{
+    text-align: center;
+}
+
+#empty_flex{
+    display: none;
+}
+
+.function{
+    position: relative;
+   
+}
+
+#reklama_block{
+    display: none;
+}
+
+#categories_block{
+    margin: 80px 20px 20px 30px;;
+    clear: both;
+    width: 80vw;
+    
+}
+
+.search{
+    margin: 0 0 30px 20px;
+    width: 90vw;
+}
+
+input[type="text"]{
+    width: 65vw;
+}
+
+#reklama{
+    display: none;
+}
+
+#product_list{
+    width: 0vw;
+}
+
+.product_block{
+    margin: 10px 0 10px 35px;
+}
+
+#block_reg{
+    top: 100px;
+    left: 10px;
+    width: 350px;
+
+}

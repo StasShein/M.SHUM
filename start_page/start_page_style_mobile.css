@@ -1,0 +1,69 @@
+body{
+    background: linear-gradient(87deg, #EECFBA, #C5DDE8)
+}
+
+.main_img{
+    display: none;
+}
+
+.product{
+    display: none;
+}
+
+.body{
+    display: block;
+}
+
+#empty_flex{
+    display: none;
+}
+
+.header{
+    display: block;
+    position: relative;
+}
+
+.name_page{
+    text-align: center;
+}
+
+.function{
+    margin-bottom: 20px;
+}
+
+#offers_list{
+    display: block;
+    justify-content: center;
+}
+
+.offer_img{
+    margin: 15% 0 0 27%;
+}
+
+.about{
+    display: block;
+}
+
+.about_block{
+    width: 95vw;
+    padding: 0;
+}
+
+.news_flex {
+    display: block;
+}
+
+#block_reg{
+    top: 100px;
+    left: 10px;
+    width: 350px;
+
+}
+
+#search{
+    display: none;
+}
+
+#categories_SP{
+    top: 120px;
+}
